@@ -261,7 +261,7 @@ export default function HomePage() {
               <p className="portfolio-card-description">
                 En este proyecto desarrollé una landing page estratégica para el lanzamiento de Medical Films Solutions ...
               </p>
-              <a href="#" className="portfolio-link">
+              <a href="/ux-ui/medical-films-solutions" className="portfolio-link">
                 Explorar proyecto <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
               </a>
             </div>
