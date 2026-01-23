@@ -298,7 +298,7 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: 55% 45% 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: start;
 }
