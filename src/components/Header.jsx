@@ -96,7 +96,7 @@ const Header = () => {
           </ul>
 
           {/* Botón CTA dentro del menú móvil */}
-          <Link to="/#trabajemos-juntos" className="navbar__cta-button navbar__cta-button--desktop"  >Trabajemos juntos</Link>
+          <Link to="/#trabajemos-juntos" onClick={() => handleNavClick(`/#trabajemos-juntos`)} className="navbar__cta-button navbar__cta-button--desktop"  >Trabajemos juntos</Link>
         </nav>
 
         {/* Botón CTA desktop (a la derecha) */}
