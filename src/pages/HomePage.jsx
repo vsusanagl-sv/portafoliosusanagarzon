@@ -99,8 +99,7 @@ export default function HomePage() {
               experiencias digitales
             </h1>
             <p className="hero-description">
-              Creo experiencias digitales basadas en investigación, usabilidad y diseño visual. Cada proyecto combina
-              estrategia, creatividad y validación con usuarios para generar soluciones funcionales y estéticas.
+              Especialista en UI/UX y Branding Digital. Transformo visiones de negocio en experiencias visuales fluidas, minimalistas y orientadas a resultados.
             </p>
             <div className="hero-buttons">
               <Link to="/portfolio" className="btn-primary">
