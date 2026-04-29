@@ -19,7 +19,7 @@ export const navData = [
   {
     id: 'redes-sociales',
     title: 'Redes Sociales',
-    description: 'En esta sección encontrarás una recopilación de piezas diseñadas para espacios físicos y comunicación visual impresa. Desde murales hasta señalética y elementos de gran formato, cada diseño fue pensado para captar la atención, comunicar con claridad y reforzar la identidad visual de las marcas en contextos reales.Estas piezas son una muestra del diseño llevado más allá de la pantalla, adaptado a entornos comerciales, vitrinas, puntos de venta y espacios institucionales.',
+    description: 'En esta sección encontrarás una recopilación de piezas diseñadas para espacios físicos y comunicación visual impresa. Desde murales hasta señalética y elementos de gran formato, cada  fue pensado para captar la atención, comunicar con claridad y reforzar la identidad visual de las marcas en contextos reales.Estas piezas son una muestra del diseño llevado más allá de la pantalla, adaptado a entornos comerciales, vitrinas, puntos de venta y espacios institucionales.',
     path: '/redes-sociales',
     items: [
       { slug: 'corre-la-serie-corre-sopo', title: 'Corre la Serie – Corre Sopó', images: '/images/Redes-sociales/Corre-la-Serie/RedesSociales-CorreSopo.jpg' },
@@ -35,8 +35,8 @@ export const navData = [
     description: 'En esta sección encontrarás una recopilación de piezas diseñadas para espacios físicos y comunicación visual impresa. Desde murales hasta señalética y elementos de gran formato, cada diseño fue pensado para captar la atención, comunicar con claridad y reforzar la identidad visual de las marcas en contextos reales. Estas piezas son una muestra del diseño llevado más allá de la pantalla, adaptado a entornos comerciales, vitrinas, puntos de venta y espacios institucionales.',
     path: '/impresion',
     items: [
-      { slug: 'merrell-impresion', title: 'Merrell', images: '/images/Diseno-impresión/Merrell/Merrell-01.jpg' },
-      { slug: 'newbody-impresion', title: 'NewBody', images: '/images/Diseno-impresión/NewBody/NewBody-01.png' }
+      { slug: 'merrell-impresion', title: 'Merrell', images: '/images/Diseno-impresion/Merrell/Merrell-01.jpg' },
+      { slug: 'newbody-impresion', title: 'NewBody', images: '/images/Diseno-impresion/NewBody/NewBody-01.png' }
     ]
   }
 ];
@@ -51,7 +51,7 @@ export const projectDetails = {
     title: 'Sistema de Landings',
     description:
       'Lo que comenzó como una landing puntual se convirtió en un sistema UX/UI escalable para gestionar más de 10 colecciones de telas en distintos mercados. Este proyecto transformó la experiencia de solicitud de muestras en Spradling Group, combinando storytelling, estructura modular, visuales impactantes y foco comercial. Cada landing fue diseñada para adaptarse a su colección, su audiencia y su contexto, sin perder consistencia ni eficiencia.',
-    images: ["/images/Diseno-UX-UI/Sistema-de-Landings/Diseño UX UI-Sistema de Landings.jpg", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-1.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-2.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-3.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-4.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-5.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-6.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-8.png"],
+    images: ["/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-1.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-2.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-3.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-4.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-5.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-6.png", "/images/Diseno-UX-UI/Sistema-de-Landings/Sistema-de-Landings-8.png"],
     links: [],
     figmaLinks: [
       {
@@ -221,7 +221,7 @@ export const projectDetails = {
   'merrell-impresion': {
     title: 'Merrell (Impresión)',
     description: 'Diseño de materiales impresos para apoyar las actividades comerciales y de marca de Merrell. Se desarrolló un calendario físico de actividades y eventos, pensado para comunicar de manera clara y atractiva en entornos de tienda.',
-    images: ["/images/Diseno-impresión/Merrell/Merrell-01.jpg", "/images/Diseno-impresión/Merrell/Merrell-02.png", "/images/Diseno-impresión/Merrell/Merrell-03.png"],
+    images: ["/images/Diseno-impresion/Merrell/Merrell-01.jpg", "/images/Diseno-impresion/Merrell/Merrell-02.png", "/images/Diseno-impresion/Merrell/Merrell-03.png"],
     figmaLinks: [
       {
         title: "",
@@ -236,7 +236,7 @@ export const projectDetails = {
   'newbody-impresion': {
     title: 'NewBody (Impresión)',
     description: 'Proyecto de diseño visual aplicado a entornos físicos para el centro estético NewBody. Se desarrollaron murales informativos, carteles promocionales y señalética interna, con el objetivo de educar al cliente sobre los tratamientos y mejorar la experiencia en punto de contacto.',
-    images: ["/images/Diseno-impresión/NewBody/NewBody-01.png", "/images/Diseno-impresión/NewBody/NewBody-02.png", "/images/Diseno-impresión/NewBody/NewBody-03.png", "/images/Diseno-impresión/NewBody/NewBody-04.png", "/images/Diseno-impresión/NewBody/NewBody-05.png", "/images/Diseno-impresión/NewBody/NewBody-06.jpg", "/images/Diseno-impresión/NewBody/NewBody-07.jpg", "/images/Diseno-impresión/NewBody/NewBody-08.jpg"],
+    images: ["/images/Diseno-impresion/NewBody/NewBody-01.png", "/images/Diseno-impresion/NewBody/NewBody-02.png", "/images/Diseno-impresion/NewBody/NewBody-03.png", "/images/Diseno-impresion/NewBody/NewBody-04.png", "/images/Diseno-impresion/NewBody/NewBody-05.png", "/images/Diseno-impresion/NewBody/NewBody-06.jpg", "/images/Diseno-impresion/NewBody/NewBody-07.jpg", "/images/Diseno-impresion/NewBody/NewBody-08.jpg"],
     figmaLinks: [
       {
         title: "",
