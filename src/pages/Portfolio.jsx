@@ -11,25 +11,25 @@ const portfolioData = [
         slug: "sistema-de-landings",
         title: "Sistema de Landings",
         image:
-          "../images/Diseño-UX-UI/Sistema-de-Landings/Diseño UX UI-Sistema de Landings.jpg",
+          "../images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg",
       },
       {
         slug: "work-with-us",
         title: "Work With US",
         image:
-          "../images/Diseño-UX-UI/Work-With-US/Diseño UX UI-Work With US.jpg",
+          "../images/Diseno-UX-UI/Work-With-US/Diseno UX UI-Work With US.jpg",
       },
       {
         slug: "medical-films-solutions",
         title: "Medical Films Solutions",
         image:
-          "../images/Diseño-UX-UI/Medical-Films-Solutions/Diseño UX UI-Medical Films Solutions.jpg",
+          "../images/Diseno-UX-UI/Medical-Films-Solutions/Diseno UX UI-Medical Films Solutions.jpg",
       },
       {
         slug: "becapp",
         title: "BecApp",
         image:
-          "../images/Diseño-UX-UI/BecApp/Diseño UX UI-BecApp.jpg",
+          "../images/Diseno-UX-UI/BecApp/Diseno UX UI-BecApp.jpg",
       },
     ],
   },
@@ -79,13 +79,13 @@ const portfolioData = [
         slug: "merrell-impresion",
         title: "Merrell",
         image:
-          "../images/Diseño-impresión/Merrell/Merrell-01.jpg",
+          "../images/Diseno-impresion/Merrell/Merrell-01.jpg",
       },
       {
         slug: "newbody-impresion",
         title: "NewBody",
         image:
-          "../images/Diseño-impresión/NewBody/NewBody-01.png",
+          "../images/Diseno-impresion/NewBody/NewBody-01.png",
       },
     ],
   },
