@@ -229,7 +229,7 @@ export default function HomePage() {
           <div className="portfolio-grid">
             <div className="portfolio-card">
               <div className="portfolio-image">
-                <img src="/images/Diseño-UX-UI/Sistema-de-Landings/Diseño UX UI-Sistema de Landings.jpg" alt="Ahuse project" />
+                <img src="/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg" alt="Ahuse project" />
               </div>
               <h3 className="portfolio-card-title">Sistema de landings</h3>
               <p className="portfolio-card-description">
@@ -242,7 +242,7 @@ export default function HomePage() {
 
             <div className="portfolio-card">
               <div className="portfolio-image">
-                <img src="/images/Diseño-UX-UI/Work-With-US/Diseño UX UI-Work With US.jpg" alt="App Dashboard project" />
+                <img src="/images/Diseno-UX-UI/Work-With-US/Diseno UX UI-Work With US.jpg" alt="App Dashboard project" />
               </div>
               <h3 className="portfolio-card-title">Work With US</h3>
               <p className="portfolio-card-description">
@@ -255,7 +255,7 @@ export default function HomePage() {
 
             <div className="portfolio-card">
               <div className="portfolio-image">
-                <img src="/images/Diseño-UX-UI/Medical-Films-Solutions/Diseño UX UI-Medical Films Solutions.jpg" alt="Easy Rent project" />
+                <img src="/images/Diseno-UX-UI/Medical-Films-Solutions/Diseno UX UI-Medical Films Solutions.jpg" alt="Easy Rent project" />
               </div>
               <h3 className="portfolio-card-title">Medical Films Solutions</h3>
               <p className="portfolio-card-description">
