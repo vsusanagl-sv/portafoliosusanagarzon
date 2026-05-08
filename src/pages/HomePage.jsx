@@ -94,13 +94,13 @@ export default function HomePage() {
             <h1 className="hero-title">
               <span className="hero-title-purple">Diseñadora UX/UI,</span>
               <br />
-              Creadora de
+             Interfaces digitales
               <br />
-              experiencias digitales
+              que resuelven problemas
             </h1>
             <p className="hero-description">
-              Especialista en UI/UX y Branding Digital. Transformo visiones de negocio en experiencias visuales fluidas, minimalistas y orientadas a resultados.
-            </p>
+              7+ años diseñando productos digitales para web y mobile. He trabajado con equipos internacionales, clientes de diferentes industrias y en entornos tanto ágiles como corporativos.Especialidad: transformar requisitos complejos en interfaces claras, intuitivas y usables.
+Trabajo con Figma, Adobe XD, Illustrator y Photoshop.
             <div className="hero-buttons">
               <Link to="/portfolio" className="btn-primary">
                 Ver portafolio
