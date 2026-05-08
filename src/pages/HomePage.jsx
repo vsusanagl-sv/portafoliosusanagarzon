@@ -99,8 +99,7 @@ export default function HomePage() {
               que resuelven problemas
             </h1>
             <p className="hero-description">
-              7+ años diseñando productos digitales para web y mobile. He trabajado con equipos internacionales, clientes de diferentes industrias y en entornos tanto ágiles como corporativos.Especialidad: transformar requisitos complejos en interfaces claras, intuitivas y usables.
-Trabajo con Figma, Adobe XD, Illustrator y Photoshop.
+             7+ años diseñando productos digitales para web y mobile. He trabajado con equipos internacionales y clientes de múltiples industrias. Mi especialidad: convertir requerimientos complejos en interfaces claras, intuitivas y usables.
             <div className="hero-buttons">
               <Link to="/portfolio" className="btn-primary">
                 Ver portafolio
@@ -184,13 +183,13 @@ Trabajo con Figma, Adobe XD, Illustrator y Photoshop.
               <p className="section-label-center">Conoce</p>
               <h2 className="section-title-center">Sobre mí</h2>
               <p>
-                Soy una diseñadora UX/UI con más de siete años de experiencia en diseño visual y dos años creando productos digitales para sectores como salud, educación, estética, deportes y contract. Me caracterizo por unir sensibilidad estética con pensamiento estructurado: diseño interfaces funcionales, intuitivas y con intención.
+                Empecé a diseñar por curiosidad — quería entender cómo se hacían las intros de los videos de YouTube que veía de niña. Lo que empezó como un juego con Photoshop y After Effects a los 12 años, se convirtió en carrera.
               </p>
               <p>
-                A lo largo de mi experiencia, he trabajado en proyectos que requieren investigación, conceptualización, arquitectura de información, prototipado y validación con usuarios. Me gusta entender cómo piensan las personas, qué necesitan y cómo puedo traducir eso en productos claros, útiles y visualmente coherentes.
+               "Mi fortaleza está en equilibrar lo visual y lo funcional por igual. No diseño solo para que se vea bien — diseño para que funcione."
               </p>
               <p>
-                Trabajo con herramientas como Figma, Adobe XD, Illustrator y Photoshop, y tengo conocimientos base en HTML, CSS y JavaScript, lo que me permite diseñar pensando en la implementación real.
+               Hoy tengo más de 7 años de experiencia diseñando productos digitales para web, mobile y apps en sectores como salud, educación, e-commerce y deportes. He trabajado con equipos internacionales, entornos corporativos y startups — y me adapto bien a todos.
               </p>
               <p>
                 Soy una persona curiosa, detallista y creativa. Me inspiran los colores, las texturas, las personas y las buenas historias. Me gusta diseñar experiencias que no solo funcionen, sino que también transmitan algo lindo y humano.
