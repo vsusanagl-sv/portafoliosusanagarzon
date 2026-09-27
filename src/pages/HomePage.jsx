@@ -100,7 +100,8 @@ export default function HomePage() {
             </h1>
             <p className="hero-description">
              7+ años diseñando productos digitales para web y mobile. He trabajado con equipos internacionales y clientes de múltiples industrias. Mi especialidad: convertir requerimientos complejos en interfaces claras, intuitivas y usables.
-            <div className="hero-buttons">
+           </p>
+              <div className="hero-buttons">
               <Link to="/portfolio" className="btn-primary">
                 Ver portafolio
                 <img src="/images/home/arrow_right_alt.png" alt="arrow" />
