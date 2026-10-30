@@ -8,7 +8,7 @@ import "./Header.css"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSubmenu, setActiveSubmenu] = useState(null)
-  const { lang, toggleLang } = useLanguage()
+  const { lang, toggleLang, setLang } = useLanguage()
   const tr = t(lang)
 
   const toggleMenu = () => {
@@ -45,17 +45,44 @@ const Header = () => {
           <img src="/logo.svg" alt="Susana Garzón UX/UI Designer" className="logo-image" />
         </button>
 
-        {/* Botón del menú hamburguesa (móvil) */}
-        <button
-          className={`header__toggle ${isMenuOpen ? "header__toggle--active" : ""}`}
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <img src="/iconoMenu.png" alt="Menú" className="header__toggle-icon" />
-        </button>
+        {/* Acciones móviles: switch corto + hamburguesa, agrupados a la derecha */}
+        <div className="header__mobile-actions">
+          <button
+            className="header__lang-switch header__lang-switch--mobile"
+            onClick={toggleLang}
+            aria-label="Switch language"
+            title={lang === "es" ? "Switch to English" : "Cambiar a Español"}
+          >
+            {lang === "es" ? "EN" : "ES"}
+          </button>
+
+          <button
+            className={`header__toggle ${isMenuOpen ? "header__toggle--active" : ""}`}
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <img src="/iconoMenu.png" alt="Menú" className="header__toggle-icon" />
+          </button>
+        </div>
 
         {/* Navegación central */}
         <nav className={`navbar ${isMenuOpen ? "navbar--open" : ""}`}>
+          {/* Selector de idioma con palabras completas, solo visible en mobile, arriba del menú */}
+          <div className="navbar__lang-select">
+            <button
+              className={`navbar__lang-option ${lang === "es" ? "navbar__lang-option--active" : ""}`}
+              onClick={() => setLang("es")}
+            >
+              Español
+            </button>
+            <button
+              className={`navbar__lang-option ${lang === "en" ? "navbar__lang-option--active" : ""}`}
+              onClick={() => setLang("en")}
+            >
+              English
+            </button>
+          </div>
+
           <ul className="navbar__list">
             {navData.map((item) => (
               <li key={item.id} className="navbar__item">
