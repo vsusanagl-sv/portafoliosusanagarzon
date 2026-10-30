@@ -1,11 +1,15 @@
 import { useState } from "react"
 import { navData } from "../data/navData.ts"
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
+import { t } from "../i18n/translations";
 import "./Header.css"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSubmenu, setActiveSubmenu] = useState(null)
+  const { lang, toggleLang } = useLanguage()
+  const tr = t(lang)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -61,7 +65,7 @@ const Header = () => {
                       className="navbar__link"
                       onClick={() => toggleSubmenu(item.id)}
                     >
-                      {item.title}
+                      {lang === "en" && item.title_en ? item.title_en : item.title}
                       <span className="navbar__arrow">▾</span>
                     </button>
 
@@ -73,7 +77,7 @@ const Header = () => {
                             className="submenu__link"
                             onClick={() => handleNavClick(`/${subitem.slug}`)}
                           >
-                            {subitem.title}
+                            {lang === "en" && subitem.title_en ? subitem.title_en : subitem.title}
                           </button>
                         </li>
                       ))}
@@ -81,13 +85,13 @@ const Header = () => {
                   </>
                 ) : (
                   item.id === "sobre-mi" ? (
-                    <Link to="/#sobre-mi" onClick={() => handleNavClick(`/#sobre-mi`)} className="navbar__link">{item.title}</Link>
+                    <Link to="/#sobre-mi" onClick={() => handleNavClick(`/#sobre-mi`)} className="navbar__link">{lang === "en" && item.title_en ? item.title_en : item.title}</Link>
                   ) : (
                     <button
                       className="navbar__link"
                       onClick={() => handleNavClick(item.path)}
                     >
-                      {item.title}
+                      {lang === "en" && item.title_en ? item.title_en : item.title}
                     </button>
                   )
                 )}
@@ -96,11 +100,21 @@ const Header = () => {
           </ul>
 
           {/* Botón CTA dentro del menú móvil */}
-          <Link to="/#trabajemos-juntos" onClick={() => handleNavClick(`/#trabajemos-juntos`)} className="navbar__cta-button navbar__cta-button--desktop"  >Trabajemos juntos</Link>
+          <Link to="/#trabajemos-juntos" onClick={() => handleNavClick(`/#trabajemos-juntos`)} className="navbar__cta-button navbar__cta-button--desktop"  >{tr.nav.trabajemos}</Link>
         </nav>
 
+        {/* Switch de idioma */}
+        <button
+          className="header__lang-switch"
+          onClick={toggleLang}
+          aria-label="Switch language"
+          title={lang === "es" ? "Switch to English" : "Cambiar a Español"}
+        >
+          {lang === "es" ? "EN" : "ES"}
+        </button>
+
         {/* Botón CTA desktop (a la derecha) */}
-        <Link to="/#trabajemos-juntos" className="navbar__cta-button navbar__cta-button--desktop"  >Trabajemos juntos</Link>
+        <Link to="/#trabajemos-juntos" className="navbar__cta-button navbar__cta-button--desktop"  >{tr.nav.trabajemos}</Link>
       </div>
     </header>
   )

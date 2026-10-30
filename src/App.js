@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import SectionPage from './pages/SectionPage';
 import ProjectPage from './pages/ProjectPage';
 import Portfolio from "./pages/Portfolio";
+import { LanguageProvider } from './context/LanguageContext';
 
 /**
  * Componente principal de la aplicación.
@@ -14,40 +15,42 @@ import Portfolio from "./pages/Portfolio";
  */
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          {/* Secciones principales */}
-          <Route
-            path="/ux-ui"
-            element={<SectionPage sectionId="ux-ui" />}
-          />
-          <Route
-            path="/redes-sociales"
-            element={<SectionPage sectionId="redes-sociales" />}
-          />
-          <Route
-            path="/impresion"
-            element={<SectionPage sectionId="impresion" />}
-          />
-          {/* Páginas de proyecto dentro de cada sección */}
-          <Route
-            path="/ux-ui/:slug"
-            element={<ProjectPage sectionId="ux-ui" />}
-          />
-          <Route
-            path="/redes-sociales/:slug"
-            element={<ProjectPage sectionId="redes-sociales" />}
-          />
-          <Route
-            path="/impresion/:slug"
-            element={<ProjectPage sectionId="impresion" />}
-          />
-          <Route path="/portfolio" element={<Portfolio />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            {/* Secciones principales */}
+            <Route
+              path="/ux-ui"
+              element={<SectionPage sectionId="ux-ui" />}
+            />
+            <Route
+              path="/redes-sociales"
+              element={<SectionPage sectionId="redes-sociales" />}
+            />
+            <Route
+              path="/impresion"
+              element={<SectionPage sectionId="impresion" />}
+            />
+            {/* Páginas de proyecto dentro de cada sección */}
+            <Route
+              path="/ux-ui/:slug"
+              element={<ProjectPage sectionId="ux-ui" />}
+            />
+            <Route
+              path="/redes-sociales/:slug"
+              element={<ProjectPage sectionId="redes-sociales" />}
+            />
+            <Route
+              path="/impresion/:slug"
+              element={<ProjectPage sectionId="impresion" />}
+            />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </LanguageProvider>
   );
 }
 

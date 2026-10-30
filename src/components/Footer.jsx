@@ -1,4 +1,6 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { t } from '../i18n/translations';
 import './Footer.css';
 
 /**
@@ -8,11 +10,13 @@ import './Footer.css';
  */
 const Footer = () => {
   const year = new Date().getFullYear();
+  const { lang } = useLanguage();
+  const tr = t(lang);
   return (
     <footer className="footer">
       <div className="footer__container">
         <p>
-          &copy; {year} Susana Garzón. Todos los derechos reservados.
+          &copy; {year} Susana Garzón. {tr.footer.rights}
         </p>
       </div>
     </footer>

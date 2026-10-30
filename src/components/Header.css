@@ -17,6 +17,26 @@
   gap: 2rem;
 }
 
+/* Switch de idioma */
+.header__lang-switch {
+  flex-shrink: 0;
+  border: 1.5px solid #7c3aed;
+  background: #ffffff;
+  color: #7c3aed;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.header__lang-switch:hover {
+  background: linear-gradient(135deg, #5e3bee 0%, #7c3aed 100%);
+  color: #ffffff;
+}
+
 /* Logo - Izquierda */
 .header__logo {
   background: none;

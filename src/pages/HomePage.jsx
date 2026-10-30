@@ -3,9 +3,13 @@ import "./Home.css"
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
+import { t } from "../i18n/translations";
 
 export default function HomePage() {
   const location = useLocation();
+  const { lang } = useLanguage();
+  const tr = t(lang);
 
   useEffect(() => {
     if (location.hash) {
@@ -54,7 +58,7 @@ export default function HomePage() {
       formDataToSend.append('name', formData.name);
       formDataToSend.append('email', formData.email);
       formDataToSend.append('message', formData.message);
-      formDataToSend.append('subject', 'Nuevo mensaje de contacto desde tu portfolio');
+      formDataToSend.append('subject', tr.contact.emailSubject);
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -73,11 +77,11 @@ export default function HomePage() {
         }, 5000);
       } else {
         console.error('Error al enviar el formulario:', data);
-        alert('Error al enviar el mensaje. Por favor, intenta nuevamente.');
+        alert(tr.contact.errorSubmit);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Error de conexión. Por favor, intenta nuevamente.');
+      alert(tr.contact.errorConnection);
     } finally {
       setIsSubmitting(false);
     }
@@ -90,25 +94,25 @@ export default function HomePage() {
       <section className="hero-section">
         <div className="hero-container">
           <div className="hero-content">
-            <p className="hero-greeting">Hola, soy Susana</p>
+            <p className="hero-greeting">{tr.hero.greeting}</p>
             <h1 className="hero-title">
-              <span className="hero-title-purple">Diseñadora UX/UI,</span>
+              <span className="hero-title-purple">{tr.hero.titleLine1}</span>
               <br />
-             Interfaces digitales
+             {tr.hero.titleLine2}
               <br />
-              que resuelven problemas
+              {tr.hero.titleLine3}
             </h1>
             <p className="hero-description">
-             7+ años diseñando productos digitales para web y mobile. He trabajado con equipos internacionales y clientes de múltiples industrias. Mi especialidad: convertir requerimientos complejos en interfaces claras, intuitivas y usables.
-           </p>
-              <div className="hero-buttons">
+             {tr.hero.description}
+            </p>
+            <div className="hero-buttons">
               <Link to="/portfolio" className="btn-primary">
-                Ver portafolio
+                {tr.hero.viewPortfolio}
                 <img src="/images/home/arrow_right_alt.png" alt="arrow" />
               </Link>
               <button className="btn-secondary" onClick={handleDownloadCV}>
                 <img src="/images/home/download.png" alt="download-icon" />
-                Descargar CV
+                {tr.hero.downloadCV}
               </button>
             </div>
           </div>
@@ -121,18 +125,17 @@ export default function HomePage() {
       {/* Mi Expertise Section */}
       <section className="expertise-section">
         <div className="expertise-container">
-          <p className="section-label">Mis habilidades</p>
-          <h2 className="section-title">Mi Expertise</h2>
+          <p className="section-label">{tr.expertise.label}</p>
+          <h2 className="section-title">{tr.expertise.title}</h2>
 
           <div className="expertise-grid">
             <div className="expertise-card">
               <div className="expertise-icon">
                 <img src="/images/home/Strategy&Direction.png" alt="Strategy icon" />
               </div>
-              <h3 className="expertise-card-title">Estrategia y Dirección UX</h3>
+              <h3 className="expertise-card-title">{tr.expertise.cards[0].title}</h3>
               <p className="expertise-card-description">
-                Creo estrategias digitales centradas en el usuario, integrando principios de UX y Design Thinking para
-                definir objetivos, mapear flujos y guiar proyectos hacia soluciones efectivas y validadas.
+                {tr.expertise.cards[0].description}
               </p>
             </div>
 
@@ -140,10 +143,9 @@ export default function HomePage() {
               <div className="expertise-icon">
                 <img src="/images/home/Branding&Logo.png" alt="Branding icon" />
               </div>
-              <h3 className="expertise-card-title">Branding e Identidad Visual</h3>
+              <h3 className="expertise-card-title">{tr.expertise.cards[1].title}</h3>
               <p className="expertise-card-description">
-                Desarrollo identidades visuales coherentes y funcionales, creando piezas gráficas estratégicas que
-                fortalecen la comunicación y elevan la experiencia de marca.
+                {tr.expertise.cards[1].description}
               </p>
             </div>
 
@@ -151,11 +153,9 @@ export default function HomePage() {
               <div className="expertise-icon">
                 <img src="/images/home/UI&UXDesign.png" alt="Product Design icon" />
               </div>
-              <h3 className="expertise-card-title">Diseño de Producto Digital (UI/UX)</h3>
+              <h3 className="expertise-card-title">{tr.expertise.cards[2].title}</h3>
               <p className="expertise-card-description">
-                Diseño interfaces intuitivas y accesibles para web y mobile bajo un enfoque Mobile First. Domino
-                wireframes, prototipos, arquitectura de información y pruebas con usuarios para optimizar navegación y
-                usabilidad.
+                {tr.expertise.cards[2].description}
               </p>
             </div>
 
@@ -163,10 +163,9 @@ export default function HomePage() {
               <div className="expertise-icon">
                 <img src="/images/home/WebflowDevelopment.png" alt="Visual Design icon" />
               </div>
-              <h3 className="expertise-card-title">Diseño Visual y Prototipado</h3>
+              <h3 className="expertise-card-title">{tr.expertise.cards[3].title}</h3>
               <p className="expertise-card-description">
-                Desarrollo soluciones digitales desde la idea hasta el prototipo final, integrando investigación,
-                arquitectura de información, diseño visual y usabilidad para crear productos funcionales y escalables.
+                {tr.expertise.cards[3].description}
               </p>
             </div>
           </div>
@@ -181,23 +180,11 @@ export default function HomePage() {
               <img src="/images/home/sobremi.png" alt="Sobre mí" className='imagen-sobremi' />
             </div>
             <div className="about-text">
-              <p className="section-label-center">Conoce</p>
-              <h2 className="section-title-center">Sobre mí</h2>
-              <p>
-                Empecé a diseñar por curiosidad — quería entender cómo se hacían las intros de los videos de YouTube que veía de niña. Lo que empezó como un juego con Photoshop y After Effects a los 12 años, se convirtió en carrera.
-              </p>
-              <p>
-               "Mi fortaleza está en equilibrar lo visual y lo funcional por igual. No diseño solo para que se vea bien — diseño para que funcione."
-              </p>
-              <p>
-               Hoy tengo más de 7 años de experiencia diseñando productos digitales para web, mobile y apps en sectores como salud, educación, e-commerce y deportes. He trabajado con equipos internacionales, entornos corporativos y startups — y me adapto bien a todos.
-              </p>
-              <p>
-                Soy una persona curiosa, detallista y creativa. Me inspiran los colores, las texturas, las personas y las buenas historias. Me gusta diseñar experiencias que no solo funcionen, sino que también transmitan algo lindo y humano.
-              </p>
-              <p>
-                Actualmente me enfoco en crecer como diseñadora de producto digital, fortaleciendo mis habilidades en UX, UI y validación con usuarios, mientras sigo explorando nuevas formas de crear experiencias significativas.
-              </p>
+              <p className="section-label-center">{tr.about.label}</p>
+              <h2 className="section-title-center">{tr.about.title}</h2>
+              {tr.about.paragraphs.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -209,8 +196,8 @@ export default function HomePage() {
           <div className="portfolio-header">
             <div className="fportfolio-header-pro">
               <div>
-                <p className="section-label2">Proyectos recientes de</p>
-                <h2 className="section-title2">Mi Portafolio</h2>
+                <p className="section-label2">{tr.portfolioPreview.label}</p>
+                <h2 className="section-title2">{tr.portfolioPreview.title}</h2>
               </div>
               <a
                 href="https://www.linkedin.com/in/susanagarzon-uxuidesign/"
@@ -220,7 +207,7 @@ export default function HomePage() {
                 style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
                 <img src="/images/home/Group.png" alt="linkedin" />
-                Visita mi LinkedIn
+                {tr.portfolioPreview.linkedin}
               </a>
             </div>
           </div>
@@ -230,12 +217,12 @@ export default function HomePage() {
               <div className="portfolio-image">
                 <img src="/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg" alt="Ahuse project" />
               </div>
-              <h3 className="portfolio-card-title">Sistema de landings</h3>
+              <h3 className="portfolio-card-title">{tr.portfolioPreview.cards[0].title}</h3>
               <p className="portfolio-card-description">
-                Lo que comenzó como una landing puntual se convirtió en un sistema UX/UI escalable para gestionar ...
+                {tr.portfolioPreview.cards[0].description}
               </p>
               <a href="/ux-ui/sistema-de-landings" className="portfolio-link">
-                Explorar proyecto <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
+                {tr.portfolioPreview.exploreProject} <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
               </a>
             </div>
 
@@ -243,12 +230,12 @@ export default function HomePage() {
               <div className="portfolio-image">
                 <img src="/images/Diseno-UX-UI/Work-With-US/Diseno UX UI-Work With US.jpg" alt="App Dashboard project" />
               </div>
-              <h3 className="portfolio-card-title">Work With US</h3>
+              <h3 className="portfolio-card-title">{tr.portfolioPreview.cards[1].title}</h3>
               <p className="portfolio-card-description">
-                Work With Us es el portal oficial de empleo para Proquinal, miembro de Spradling Group, creado para ...
+                {tr.portfolioPreview.cards[1].description}
               </p>
               <a href="/ux-ui/work-with-us" className="portfolio-link">
-                Explorar proyecto <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
+                {tr.portfolioPreview.exploreProject} <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
               </a>
             </div>
 
@@ -256,12 +243,12 @@ export default function HomePage() {
               <div className="portfolio-image">
                 <img src="/images/Diseno-UX-UI/Medical-Films-Solutions/Diseno UX UI-Medical Films Solutions.jpg" alt="Easy Rent project" />
               </div>
-              <h3 className="portfolio-card-title">Medical Films Solutions</h3>
+              <h3 className="portfolio-card-title">{tr.portfolioPreview.cards[2].title}</h3>
               <p className="portfolio-card-description">
-                En este proyecto desarrollé una landing page estratégica para el lanzamiento de Medical Films Solutions ...
+                {tr.portfolioPreview.cards[2].description}
               </p>
               <a href="/ux-ui/medical-films-solutions" className="portfolio-link">
-                Explorar proyecto <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
+                {tr.portfolioPreview.exploreProject} <img src="/images/home/Vector.png" alt="Vector" className="Vector" />
               </a>
             </div>
           </div>
@@ -289,10 +276,9 @@ export default function HomePage() {
         <div className="contact-container">
           <div className="contact-content">
             <div className="contact-info">
-              <h2 className="contact-title">¿Trabajamos juntos?</h2>
+              <h2 className="contact-title">{tr.contact.title}</h2>
               <p className="contact-description">
-                Estoy abierta a nuevas oportunidades, proyectos freelance o colaboraciones. Si quieres crear algo
-                increíble, puedes escribirme aquí:
+                {tr.contact.description}
               </p>
               <div className="contact-details">
                 <div className="contact-item">
@@ -307,13 +293,13 @@ export default function HomePage() {
             </div>
 
             <div className="contact-form-wrapper">
-              <h3 className="form-title">Enviar un mensaje</h3>
+              <h3 className="form-title">{tr.contact.formTitle}</h3>
 
               <form className="contact-form" onSubmit={handleSubmit}>
                 <input
                   type="text"
                   name="name"
-                  placeholder="Nombre"
+                  placeholder={tr.contact.namePlaceholder}
                   className="form-input"
                   value={formData.name}
                   onChange={handleChange}
@@ -323,7 +309,7 @@ export default function HomePage() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder={tr.contact.emailPlaceholder}
                   className="form-input"
                   value={formData.email}
                   onChange={handleChange}
@@ -332,7 +318,7 @@ export default function HomePage() {
                 />
                 <textarea
                   name="message"
-                  placeholder="Tu mensaje"
+                  placeholder={tr.contact.messagePlaceholder}
                   rows={6}
                   className="form-textarea"
                   value={formData.message}
@@ -345,7 +331,7 @@ export default function HomePage() {
                   className="form-submit"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+                  {isSubmitting ? tr.contact.sending : tr.contact.send}
                 </button>
               </form>
 
@@ -355,8 +341,8 @@ export default function HomePage() {
                   <div className="toast-content">
                     <span className="toast-icon">✓</span>
                     <div className="toast-text">
-                      <strong>¡Gracias por tu mensaje!</strong>
-                      <p>Me pondré en contacto contigo pronto.</p>
+                      <strong>{tr.contact.toastTitle}</strong>
+                      <p>{tr.contact.toastBody}</p>
                     </div>
                     <button
                       className="toast-close"
