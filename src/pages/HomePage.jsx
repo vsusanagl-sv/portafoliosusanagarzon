@@ -25,9 +25,10 @@ export default function HomePage() {
   }, [location]);
 
   const handleDownloadCV = () => {
+    const fileName = lang === "en" ? "Susana_Garzon_CV_EN.pdf" : "Susana_Garzon_CV_ES.pdf"
     const link = document.createElement("a")
-    link.href = "/document/Susana_Garzon_CV.pdf"
-    link.download = "Susana_Garzon_CV.pdf"
+    link.href = `/document/${fileName}`
+    link.download = fileName
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
