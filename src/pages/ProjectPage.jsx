@@ -21,6 +21,7 @@ const ProjectPage = () => {
 
   const title = lang === "en" && project.title_en ? project.title_en : project.title;
   const description = lang === "en" && project.description_en ? project.description_en : project.description;
+  const images = lang === "en" && project.images_en && project.images_en.length > 0 ? project.images_en : project.images;
 
   return (
     <section className="project">
@@ -28,9 +29,9 @@ const ProjectPage = () => {
       <p className="project__description">{description}</p>
 
       {/* Galería de imágenes */}
-      {project.images && project.images.length > 0 && (
+      {images && images.length > 0 && (
         <div className="project__gallery">
-          {project.images.map((src, index) => (
+          {images.map((src, index) => (
             <img
               key={index}
               src={src}
