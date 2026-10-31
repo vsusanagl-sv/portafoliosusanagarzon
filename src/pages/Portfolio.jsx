@@ -18,6 +18,8 @@ const portfolioData = [
         title_en: "Landing Page System",
         image:
           "../images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg",
+        image_en:
+          "../images/Diseno-UX-UI/Sistema-de-Landings/en/Sistema-de-Landings-en-01.webp",
       },
       {
         slug: "work-with-us",
@@ -131,7 +133,7 @@ export default function Portfolio() {
             {section.items.map((item) => (
               <article key={item.slug} className="portfolio-card">
                 <div className="portfolio-image">
-                  <img src={item.image} alt={lang === "en" ? item.title_en : item.title} />
+                  <img src={lang === "en" && item.image_en ? item.image_en : item.image} alt={lang === "en" ? item.title_en : item.title} />
                 </div>
 
                 <div className="portfolio-card-content">
