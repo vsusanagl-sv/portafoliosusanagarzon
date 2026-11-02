@@ -167,11 +167,11 @@ export const projectDetails = {
     ,
     figmaLinks: [
       {
-        title: "Valencia ™ Biosense Landing Page prototipo",
-        title_en: "Valencia ™ Biosense Landing Page prototype",
+        title: "BecApp prototipo",
+        title_en: "BecApp prototype",
         embedUrl: "https://embed.figma.com/proto/PjCjnfn6ZsgpCHt7Io185K/App-Becas-WIreframes-Coderhouse?page-id=0%3A1&node-id=792-4042&p=f&viewport=-221%2C306%2C0.1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=792%3A4042&show-proto-sidebar=1&embed-host=share",
         directUrl: "https://acortar.link/aLFJNA",
-        linkSate: "https://valenciabiosense.spradling.eu/es",
+        linkSate: "",
         botonNameFigma: "Ver prototipo",
         botonNameFigma_en: "View prototype",
         botonNameSite: ""

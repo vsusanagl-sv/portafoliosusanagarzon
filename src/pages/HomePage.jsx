@@ -216,7 +216,7 @@ export default function HomePage() {
           <div className="portfolio-grid">
             <div className="portfolio-card">
               <div className="portfolio-image">
-                <img src="/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg" alt="Ahuse project" />
+                <img src={lang === "en" ? "/images/Diseno-UX-UI/Sistema-de-Landings/en/Sistema-de-Landings-en-01.webp" : "/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg"} alt="Ahuse project" />
               </div>
               <h3 className="portfolio-card-title">{tr.portfolioPreview.cards[0].title}</h3>
               <p className="portfolio-card-description">

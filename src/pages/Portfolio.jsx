@@ -41,6 +41,8 @@ const portfolioData = [
         title_en: "BecApp",
         image:
           "../images/Diseno-UX-UI/BecApp/Diseno UX UI-BecApp.jpg",
+        image_en:
+          "../images/Diseno-UX-UI/BecApp/en/BecApp-en-01.webp",
       },
     ],
   },
