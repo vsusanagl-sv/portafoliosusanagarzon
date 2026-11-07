@@ -25,7 +25,7 @@ const SectionPage = ({ sectionId }) => {
           <div key={item.slug} className="section__card">
             {item.images && (
               <img
-                src={item.images}
+                src={lang === 'en' && item.images_en ? item.images_en : item.images}
                 className="project__image"
                 alt={lang === 'en' && item.title_en ? item.title_en : item.title}
               />

@@ -12,10 +12,10 @@ export const navData = [
     description_en: 'In this section you\'ll find a selection of end-to-end digital projects: from landing pages and web portals to native mobile apps. Each project was designed to solve a real business problem, combining user research, information architecture, and visual design, with a focus on experience and measurable results like conversion, retention, and user satisfaction.',
     path: '/ux-ui',
     items: [
-      { slug: 'sistema-de-landings', title: 'Sistema de Landings', title_en: 'Landing Page System', images: '/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg' },
+      { slug: 'sistema-de-landings', title: 'Sistema de Landings', title_en: 'Landing Page System', images: '/images/Diseno-UX-UI/Sistema-de-Landings/Diseno UX UI-Sistema de Landings.jpg', images_en: '/images/Diseno-UX-UI/Sistema-de-Landings/en/Sistema-de-Landings-en-01.webp' },
       { slug: 'work-with-us', title: 'Work With US', title_en: 'Work With US', images: '/images/Diseno-UX-UI/Work-With-US/Diseno UX UI-Work With US.jpg' },
       { slug: 'medical-films-solutions', title: 'Medical Films Solutions', title_en: 'Medical Films Solutions', images: '/images/Diseno-UX-UI/Medical-Films-Solutions/Diseno UX UI-Medical Films Solutions.jpg' },
-      { slug: 'becapp', title: 'BecApp', title_en: 'BecApp', images: '/images/Diseno-UX-UI/BecApp/Diseno UX UI-BecApp.jpg' }
+      { slug: 'becapp', title: 'BecApp', title_en: 'BecApp', images: '/images/Diseno-UX-UI/BecApp/Diseno UX UI-BecApp.jpg', images_en: '/images/Diseno-UX-UI/BecApp/en/BecApp-en-01.webp' }
     ]
   },
   {
@@ -26,11 +26,11 @@ export const navData = [
     description_en: 'In this section you\'ll find a selection of graphic pieces and visual content created for social media: campaigns, carousels, and digital brand communication. Each piece was designed to capture attention in the feed, communicate clearly, and maintain visual consistency with each brand\'s identity.',
     path: '/redes-sociales',
     items: [
-      { slug: 'corre-la-serie-corre-sopo', title: 'Corre la Serie – Corre Sopó', title_en: 'Corre la Serie – Corre Sopó', images: '/images/Redes-sociales/Corre-la-Serie/RedesSociales-CorreSopo.jpg' },
-      { slug: 'merrell-actividades', title: 'Merrell Actividades', title_en: 'Merrell Activities', images: '/images/Redes-sociales/Merrell-Actividades/MerrellActividades-01.jpg' },
-      { slug: 'injoy-app', title: 'InJoy App', title_en: 'InJoy App', images: '/images/Redes-sociales/InJoy-App/InJoyApp-01.png' },
-      { slug: 'lucro-app', title: 'Lucro App', title_en: 'Lucro App', images: '/images/Redes-sociales/Lucro-App/LucroApp-01.jpg' },
-      { slug: 'newbody-redes', title: 'NewBody', title_en: 'NewBody', images: '/images/Redes-sociales/NewBody/NewBody-01.jpg' }
+      { slug: 'corre-la-serie-corre-sopo', title: 'Corre la Serie – Corre Sopó', title_en: 'Corre la Serie – Corre Sopó', images: '/images/Redes-sociales/Corre-la-Serie/RedesSociales-CorreSopo.jpg', images_en: '/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-01.webp' },
+      { slug: 'merrell-actividades', title: 'Merrell Actividades', title_en: 'Merrell Activities', images: '/images/Redes-sociales/Merrell-Actividades/MerrellActividades-01.jpg', images_en: '/images/Redes-sociales/Merrell-Actividades/en/merrell-en-01.webp' },
+      { slug: 'injoy-app', title: 'InJoy App', title_en: 'InJoy App', images: '/images/Redes-sociales/InJoy-App/InJoyApp-01.png', images_en: '/images/Redes-sociales/InJoy-App/en/injoy-en-01.webp' },
+      { slug: 'gotrendier', title: 'GoTrendier – GIF In-App', title_en: 'GoTrendier – In-App GIF', images: '/images/Redes-sociales/GoTrendier/es/gotrendier-es-01.webp', images_en: '/images/Redes-sociales/GoTrendier/en/gotrendier-en-01.webp' },
+      { slug: 'newbody-redes', title: 'NewBody', title_en: 'NewBody', images: '/images/Redes-sociales/NewBody/NewBody-01.jpg', images_en: '/images/Redes-sociales/NewBody/en/newbody-en-01.webp' }
     ]
   },
   {
@@ -186,6 +186,7 @@ export const projectDetails = {
     description_en:
       'Full graphic design for a nighttime trail running event in Sopó. I handled everything from the complete visual identity (logo, typography, medals, merchandise) to digital content: posts, stories, video, and Instagram ads. Goal: keep the community informed and drive sign-ups.',
     images: ["/images/Redes-sociales/Corre-la-Serie/RedesSociales-CorreSopo.jpg", "/images/Redes-sociales/Corre-la-Serie/CarreraSopo-01.png", "/images/Redes-sociales/Corre-la-Serie/CarreraSopo-02.png", "/images/Redes-sociales/Corre-la-Serie/CarreraSopo-03.png", "/images/Redes-sociales/Corre-la-Serie/CarreraSopo-04.png", "/images/Redes-sociales/Corre-la-Serie/CarreraSopo-05.jpg"],
+    images_en: ["/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-01.webp", "/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-02.webp", "/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-03.webp", "/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-04.webp", "/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-05.webp", "/images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-06.webp"],
     figmaLinks: [
       {
         title: "",
@@ -203,6 +204,7 @@ export const projectDetails = {
     description: 'Campañas visuales para caminatas, campamentos y eventos de marca como el Merrell Trail Tour. Se diseñaron múltiples piezas para Instagram según cada actividad, promoviendo la inscripción a través de visuales consistentes e informativos. 📍 IG – @merrell_colombia',
     description_en: 'Visual campaigns for hikes, camps, and brand events like the Merrell Trail Tour. Multiple pieces were designed for Instagram for each activity, driving sign-ups through consistent, informative visuals. 📍 IG – @merrell_colombia',
     images: ["/images/Redes-sociales/Merrell-Actividades/MerrellActividades-01.jpg", "/images/Redes-sociales/Merrell-Actividades/MerrellActividades-02.png", "/images/Redes-sociales/Merrell-Actividades/MerrellActividades-03.png", "/images/Redes-sociales/Merrell-Actividades/MerrellActividades-04.png", "/images/Redes-sociales/Merrell-Actividades/MerrellActividades-05.png", "/images/Redes-sociales/Merrell-Actividades/MerrellActividades-06.png"],
+    images_en: ["/images/Redes-sociales/Merrell-Actividades/en/merrell-en-01.webp", "/images/Redes-sociales/Merrell-Actividades/en/merrell-en-02.webp", "/images/Redes-sociales/Merrell-Actividades/en/merrell-en-03.webp", "/images/Redes-sociales/Merrell-Actividades/en/merrell-en-04.webp", "/images/Redes-sociales/Merrell-Actividades/en/merrell-en-05.webp", "/images/Redes-sociales/Merrell-Actividades/en/merrell-en-06.webp"],
     figmaLinks: [
       {
         title: "",
@@ -222,6 +224,7 @@ export const projectDetails = {
     description_en:
       'Concept campaign for the launch of an app that lets employees manage their payroll from their phone. Communication goals, visual tone, and content style were defined. Includes storytelling, posts, carousels, stories, and ad design adaptable across social platforms. 📍 Simulated',
     images: ["/images/Redes-sociales/InJoy-App/InJoyApp-01.png", "/images/Redes-sociales/InJoy-App/InJoyApp-02.png", "/images/Redes-sociales/InJoy-App/InJoyApp-03.png", "/images/Redes-sociales/InJoy-App/InJoyApp-04.png", "/images/Redes-sociales/InJoy-App/InJoyApp-05.png", "/images/Redes-sociales/InJoy-App/InJoyApp-06.png", "/images/Redes-sociales/InJoy-App/InJoyApp-07.png", "/images/Redes-sociales/InJoy-App/InJoyApp-08.png", "/images/Redes-sociales/InJoy-App/InJoyApp-09.png", "/images/Redes-sociales/InJoy-App/InJoyApp-10.png", "/images/Redes-sociales/InJoy-App/InJoyApp-11.png", "/images/Redes-sociales/InJoy-App/InJoyApp-12.png", "/images/Redes-sociales/InJoy-App/InJoyApp-13.png", "/images/Redes-sociales/InJoy-App/InJoyApp-14.png"],
+    images_en: ["/images/Redes-sociales/InJoy-App/en/injoy-en-01.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-02.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-03.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-04.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-05.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-06.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-07.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-08.webp", "/images/Redes-sociales/InJoy-App/en/injoy-en-09.webp", "/images/Redes-sociales/InJoy-App/InJoyApp-10.png", "/images/Redes-sociales/InJoy-App/InJoyApp-11.png", "/images/Redes-sociales/InJoy-App/InJoyApp-12.png", "/images/Redes-sociales/InJoy-App/InJoyApp-13.png", "/images/Redes-sociales/InJoy-App/InJoyApp-14.png"],
     figmaLinks: [
       {
         title: "",
@@ -233,14 +236,15 @@ export const projectDetails = {
       }
     ]
   },
-  'lucro-app': {
-    title: 'Lucro App',
-    title_en: 'Lucro App',
+  'gotrendier': {
+    title: 'GoTrendier – GIF In-App',
+    title_en: 'GoTrendier – In-App GIF',
     description:
-      'Diseño de campaña visual para anunciar promociones navideñas de una app de recompensas. Se crearon posts y carruseles informativos para Facebook, Instagram y LinkedIn, mostrando beneficios, tareas y premios disponibles para los usuarios. 📍 Simulado',
+      'Prueba técnica de diseño UX/UI y gráfico para GoTrendier: un GIF animado in-app para promocionar ofertas de conjuntos Inditex con descuento, un carrusel de 6 posts con dinámica de looks usando una camisa blanca, y un newsletter de rebajas y tendencias. Precedido de un benchmarking de la marca (Instagram, mailing, sitio web y manual de marca) para innovar sin salirse de los lineamientos visuales. 📍 Prueba técnica',
     description_en:
-      'Visual campaign design to announce holiday promotions for a rewards app. Informative posts and carousels were created for Facebook, Instagram, and LinkedIn, showcasing benefits, tasks, and rewards available to users. 📍 Simulated',
-    images: ["/images/Redes-sociales/Lucro-App/LucroApp-01.jpg", "/images/Redes-sociales/Lucro-App/LucroApp-02.png", "/images/Redes-sociales/Lucro-App/LucroApp-03.png", "/images/Redes-sociales/Lucro-App/LucroApp-04.png"],
+      'Technical design test (UX/UI and graphic) for GoTrendier: an animated in-app GIF to promote discounted Inditex outfits, a 6-post carousel built around a white-shirt styling challenge, and a sales/trends newsletter. Preceded by a brand benchmark (Instagram, mailing, website, and brand manual) to innovate within the existing visual guidelines. 📍 Technical test',
+    images: ["/images/Redes-sociales/GoTrendier/es/gotrendier-es-01.webp", "/images/Redes-sociales/GoTrendier/es/gotrendier-es-02.webp", "/images/Redes-sociales/GoTrendier/es/gotrendier-es-03.webp", "/images/Redes-sociales/GoTrendier/es/gotrendier-es-04.webp", "/images/Redes-sociales/GoTrendier/es/gotrendier-es-05.webp", "/images/Redes-sociales/GoTrendier/es/gotrendier-es-06.webp", "/images/Redes-sociales/GoTrendier/es/gotrendier-es-07.webp"],
+    images_en: ["/images/Redes-sociales/GoTrendier/en/gotrendier-en-01.webp", "/images/Redes-sociales/GoTrendier/en/gotrendier-en-02.webp", "/images/Redes-sociales/GoTrendier/en/gotrendier-en-03.webp", "/images/Redes-sociales/GoTrendier/en/gotrendier-en-04.webp", "/images/Redes-sociales/GoTrendier/en/gotrendier-en-05.webp", "/images/Redes-sociales/GoTrendier/en/gotrendier-en-06.webp", "/images/Redes-sociales/GoTrendier/en/gotrendier-en-07.webp"],
     figmaLinks: [
       {
         title: "",
@@ -258,6 +262,7 @@ export const projectDetails = {
     description: 'Campañas promocionales para Facebook e Instagram enfocadas en destacar tratamientos estéticos no invasivos. El objetivo era posicionar la marca, mostrar beneficios reales y activar el deseo de probar los servicios. 📍 FB + IG',
     description_en: 'Promotional campaigns for Facebook and Instagram focused on highlighting non-invasive aesthetic treatments. The goal was to position the brand, show real benefits, and spark interest in trying the services. 📍 FB + IG',
     images: ["/images/Redes-sociales/NewBody/NewBody-01.jpg", "/images/Redes-sociales/NewBody/NewBody-02.png", "/images/Redes-sociales/NewBody/NewBody-03.png"],
+    images_en: ["/images/Redes-sociales/NewBody/en/newbody-en-01.webp", "/images/Redes-sociales/NewBody/en/newbody-en-02.webp", "/images/Redes-sociales/NewBody/en/newbody-en-03.webp"],
     figmaLinks: [
       {
         title: "",

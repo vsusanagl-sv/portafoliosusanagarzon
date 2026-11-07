@@ -61,6 +61,8 @@ const portfolioData = [
         title_en: "Corre la Serie – Corre Sopó",
         image:
           "../images/Redes-sociales/Corre-la-Serie/RedesSociales-CorreSopo.jpg",
+        image_en:
+          "../images/Redes-sociales/Corre-la-Serie/en/correlaserie-en-01.webp",
       },
       {
         slug: "merrell-actividades",
@@ -68,18 +70,22 @@ const portfolioData = [
         title_en: "Merrell Activities",
         image:
           "../images/Redes-sociales/Merrell-Actividades/MerrellActividades-01.jpg",
+        image_en:
+          "../images/Redes-sociales/Merrell-Actividades/en/merrell-en-01.webp",
       },
       {
         slug: "injoy-app",
         title: "InJoy App",
         title_en: "InJoy App",
         image: "../images/Redes-sociales/InJoy-App/InJoyApp-01.png",
+        image_en: "../images/Redes-sociales/InJoy-App/en/injoy-en-01.webp",
       },
       {
-        slug: "lucro-app",
-        title: "Lucro App",
-        title_en: "Lucro App",
-        image: "../images/Redes-sociales/Lucro-App/LucroApp-01.jpg",
+        slug: "gotrendier",
+        title: "GoTrendier – GIF In-App",
+        title_en: "GoTrendier – In-App GIF",
+        image: "../images/Redes-sociales/GoTrendier/es/gotrendier-es-01.webp",
+        image_en: "../images/Redes-sociales/GoTrendier/en/gotrendier-en-01.webp",
       },
       {
         slug: "newbody-redes",
@@ -87,6 +93,8 @@ const portfolioData = [
         title_en: "NewBody",
         image:
           "../images/Redes-sociales/NewBody/NewBody-01.jpg",
+        image_en:
+          "../images/Redes-sociales/NewBody/en/newbody-en-01.webp",
       },
     ],
   },
