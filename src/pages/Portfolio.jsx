@@ -113,6 +113,8 @@ const portfolioData = [
         title_en: "Merrell",
         image:
           "../images/Diseno-impresion/Merrell/Merrell-01.jpg",
+        image_en:
+          "../images/Diseno-impresion/Merrell/en/merrell-imp-en-01.webp",
       },
       {
         slug: "newbody-impresion",
@@ -120,6 +122,8 @@ const portfolioData = [
         title_en: "NewBody",
         image:
           "../images/Diseno-impresion/NewBody/NewBody-01.png",
+        image_en:
+          "../images/Diseno-impresion/NewBody/en/nb-imp-en-01.webp",
       },
     ],
   },

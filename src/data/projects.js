@@ -41,8 +41,8 @@ export const navData = [
     description_en: 'In this section you\'ll find a collection of pieces designed for physical spaces and printed visual communication. From murals to signage and large-format pieces, each design was created to capture attention, communicate clearly, and reinforce brand identity in real-world contexts. These pieces show design taken beyond the screen, adapted to retail environments, storefronts, points of sale, and institutional spaces.',
     path: '/impresion',
     items: [
-      { slug: 'merrell-impresion', title: 'Merrell', title_en: 'Merrell', images: '/images/Diseno-impresion/Merrell/Merrell-01.jpg' },
-      { slug: 'newbody-impresion', title: 'NewBody', title_en: 'NewBody', images: '/images/Diseno-impresion/NewBody/NewBody-01.png' }
+      { slug: 'merrell-impresion', title: 'Merrell', title_en: 'Merrell', images: '/images/Diseno-impresion/Merrell/Merrell-01.jpg', images_en: '/images/Diseno-impresion/Merrell/en/merrell-imp-en-01.webp' },
+      { slug: 'newbody-impresion', title: 'NewBody', title_en: 'NewBody', images: '/images/Diseno-impresion/NewBody/NewBody-01.png', images_en: '/images/Diseno-impresion/NewBody/en/nb-imp-en-01.webp' }
     ]
   }
 ];
@@ -280,6 +280,7 @@ export const projectDetails = {
     description: 'Diseño de materiales impresos para apoyar las actividades comerciales y de marca de Merrell. Se desarrolló un calendario físico de actividades y eventos, pensado para comunicar de manera clara y atractiva en entornos de tienda.',
     description_en: 'Design of printed materials to support Merrell\'s commercial and brand activities. A physical calendar of activities and events was developed, designed to communicate clearly and attractively in in-store environments.',
     images: ["/images/Diseno-impresion/Merrell/Merrell-01.jpg", "/images/Diseno-impresion/Merrell/Merrell-02.png", "/images/Diseno-impresion/Merrell/Merrell-03.png"],
+    images_en: ["/images/Diseno-impresion/Merrell/en/merrell-imp-en-01.webp", "/images/Diseno-impresion/Merrell/en/merrell-imp-en-02.webp", "/images/Diseno-impresion/Merrell/en/merrell-imp-en-03.webp"],
     figmaLinks: [
       {
         title: "",
@@ -297,6 +298,7 @@ export const projectDetails = {
     description: 'Proyecto de diseño visual aplicado a entornos físicos para el centro estético NewBody. Se desarrollaron murales informativos, carteles promocionales y señalética interna, con el objetivo de educar al cliente sobre los tratamientos y mejorar la experiencia en punto de contacto.',
     description_en: 'Visual design project applied to physical spaces for the NewBody aesthetic center. Informational murals, promotional posters, and interior signage were developed, aimed at educating clients about treatments and improving the experience at each touchpoint.',
     images: ["/images/Diseno-impresion/NewBody/NewBody-01.png", "/images/Diseno-impresion/NewBody/NewBody-02.png", "/images/Diseno-impresion/NewBody/NewBody-03.png", "/images/Diseno-impresion/NewBody/NewBody-04.png", "/images/Diseno-impresion/NewBody/NewBody-05.png", "/images/Diseno-impresion/NewBody/NewBody-06.jpg", "/images/Diseno-impresion/NewBody/NewBody-07.jpg", "/images/Diseno-impresion/NewBody/NewBody-08.jpg"],
+    images_en: ["/images/Diseno-impresion/NewBody/en/nb-imp-en-01.webp", "/images/Diseno-impresion/NewBody/en/nb-imp-en-02.webp", "/images/Diseno-impresion/NewBody/en/nb-imp-en-03.webp", "/images/Diseno-impresion/NewBody/en/nb-imp-en-04.webp", "/images/Diseno-impresion/NewBody/en/nb-imp-en-05.webp", "/images/Diseno-impresion/NewBody/NewBody-06.jpg", "/images/Diseno-impresion/NewBody/NewBody-07.jpg", "/images/Diseno-impresion/NewBody/NewBody-08.jpg"],
     figmaLinks: [
       {
         title: "",
